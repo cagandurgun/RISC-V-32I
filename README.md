@@ -24,7 +24,7 @@ CPU
 
 ### Author
 
-[CaganDurgun]
+[[CaganDurgun]](https://github.com/cagandurgun)
 
 ### Creation Date
 
