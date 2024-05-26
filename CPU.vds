@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun May 26 15:14:20 2024
+# Process ID: 8436
+# Current directory: C:/Users/durgu/RV32/RV32.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: C:/Users/durgu/RV32/RV32.runs/synth_1/CPU.vds
+# Journal file: C:/Users/durgu/RV32/RV32.runs/synth_1\vivado.jou
+# Running On: Cagan, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 17064 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 472.754 ; gain = 180.953
+Command: read_checkpoint -auto_incremental -incremental C:/Users/durgu/RV32/RV32.srcs/utils_1/imports/synth_1/CPU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/durgu/RV32/RV32.srcs/utils_1/imports/synth_1/CPU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11304
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 924.914 ; gain = 440.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:27]
+WARNING: [Synth 8-151] case item 7'b0110111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:105]
+WARNING: [Synth 8-151] case item 7'b0010111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:107]
+WARNING: [Synth 8-151] case item 7'b1101111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:109]
+WARNING: [Synth 8-151] case item 7'b1100111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:111]
+WARNING: [Synth 8-151] case item 7'b1100011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:113]
+WARNING: [Synth 8-151] case item 7'b0000011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:115]
+WARNING: [Synth 8-151] case item 7'b0100011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:117]
+WARNING: [Synth 8-151] case item 7'b0010011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:127]
+WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:129]
+WARNING: [Synth 8-151] case item 7'b0110111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:141]
+WARNING: [Synth 8-151] case item 7'b0010111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:146]
+WARNING: [Synth 8-151] case item 7'b1101111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:151]
+WARNING: [Synth 8-151] case item 7'b1100111 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:156]
+WARNING: [Synth 8-151] case item 7'b1100011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:161]
+WARNING: [Synth 8-151] case item 7'b0000011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:174]
+WARNING: [Synth 8-151] case item 7'b0100011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:181]
+WARNING: [Synth 8-151] case item 7'b0010011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:186]
+WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:27]
+WARNING: [Synth 8-6014] Unused sequential element simdiki_asama_r_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:75]
+WARNING: [Synth 8-6014] Unused sequential element buyruk_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:82]
+WARNING: [Synth 8-6014] Unused sequential element opcode_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:88]
+WARNING: [Synth 8-6014] Unused sequential element rd_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:89]
+WARNING: [Synth 8-6014] Unused sequential element funct3_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:90]
+WARNING: [Synth 8-6014] Unused sequential element rs1_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:91]
+WARNING: [Synth 8-6014] Unused sequential element rs2_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:92]
+WARNING: [Synth 8-6014] Unused sequential element funct7_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:93]
+WARNING: [Synth 8-6014] Unused sequential element imm1_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:94]
+WARNING: [Synth 8-6014] Unused sequential element imm2_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:95]
+WARNING: [Synth 8-6014] Unused sequential element imm3_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:96]
+WARNING: [Synth 8-6014] Unused sequential element imm4_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:97]
+WARNING: [Synth 8-6014] Unused sequential element imm5_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:98]
+WARNING: [Synth 8-6014] Unused sequential element imm6_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:99]
+WARNING: [Synth 8-6014] Unused sequential element imm7_reg was removed.  [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:100]
+WARNING: [Synth 8-3848] Net bellek_yazilacak_veri in module/entity CPU does not have driver. [C:/Users/durgu/RV32/RV32.srcs/sources_1/new/CPU.v:49]
+WARNING: [Synth 8-3917] design CPU has port bellek_yaz driven by constant 0
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[31] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[30] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[29] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[28] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[27] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[26] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[25] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[24] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[23] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[22] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[21] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[20] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[19] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[18] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[17] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[16] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[15] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[14] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[13] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[12] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[11] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[10] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[9] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[8] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[7] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[6] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[5] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[4] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[3] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[2] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[1] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[0] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[31] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[30] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[29] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[28] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[27] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[26] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[25] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[24] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[23] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[22] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[21] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[20] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[19] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[18] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[17] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[16] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[15] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[14] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[13] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[12] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[11] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[10] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[9] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[8] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[7] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[6] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[5] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[4] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[3] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[2] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[1] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[0] in module CPU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.141 ; gain = 546.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1031.141 ; gain = 546.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1031.141 ; gain = 546.812
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1031.141 ; gain = 546.812
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design CPU has port bellek_yaz driven by constant 0
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[31] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[30] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[29] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[28] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[27] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[26] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[25] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[24] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[23] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[22] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[21] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[20] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[19] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[18] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[17] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[16] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[15] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[14] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[13] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[12] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[11] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[10] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[9] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[8] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[7] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[6] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[5] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[4] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[3] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[2] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[1] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_yaz_veri[0] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[31] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[30] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[29] in module CPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bellek_oku_veri[28] in module CPU is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |    33|
+|2     |OBUFT |    32|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    65|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 165 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1203.754 ; gain = 719.426
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1206.699 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1305.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3cb3e858
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.504 ; gain = 828.801
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1305.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/durgu/RV32/RV32.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 15:15:09 2024...
